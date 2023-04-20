@@ -1,0 +1,92 @@
+/* Orange: #f6924a
+Dark Orange/Brown?: #985b36
+White: #fdeed7
+Black/dark blue: #293450
+Green: #7ca597 
+Slightly Darker Green: #558575  */
+
+:root {
+  --main-bg-color: #fdeed7;
+  --primary-button-color: #6f8d82;
+  --secondary-button-color: #f6924a;
+  --main-font-color: #293450;
+}
+
+html,
+body {
+  color: var(--main-font-color);
+}
+button {
+  color: var(--primary-button-color);
+}
+
+.btn-primary {
+  color: var(--main-font-color);
+  font-weight: bold;
+  padding: 15px 32px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: var(--main-font-color) 0px 3px 0px 0px;
+  border-radius: 12px;
+  background-color: var(--primary-button-color);
+}
+.btn-secondary {
+  color: var(--main-font-color);
+  font-weight: bold;
+  padding: 15px 32px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: var(--main-font-color) 0px 3px 0px 0px;
+  border-radius: 12px;
+  background-color: var(--secondary-button-color);
+}
+.btn-outline-secondary {
+  color: var(--main-font-color);
+  font-weight: bold;
+  padding: 15px 32px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: var(--main-font-color) 0px 3px 0px 0px;
+  border-radius: 12px;
+  background-color: var(--main-bg-color);
+}
+.btn-primary:active, .btn-secondary:active, .btn-outline-secondary:active{
+    box-shadow: none;
+    margin: 0;
+    top: 0.2em;
+}
+.btn-primary, .btn-secondary, .btn-outline-secondary{
+    position: relative; top: 0em;
+    transition: none;
+}
+.bg-body-tertiary{
+background-color: var(--secondary-button-color)!important; color: var(--secondary-button-color); 
+
+}
+.search-form{
+    padding: 8px; border-radius: 32px; border: 1px solid var(--main-font-color); box-shadow: inset 0 0.25em 0 0 #f0f1f3;
+
+}
+.dropdown-toggle {
+    font-weight: 600; 
+    color: var(--main-font-color)  
+}
+
+#onetrust-banner-sdk.otFlat {
+position: fixed;
+    z-index: 2147483645;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto; }
+
+    #onetrust-banner-sdk {
+      box-shadow: 0 0 18px rgba(0,0,0,.2);
+  }
+
+  @media (max-width: 600px){
+    .mobile-row {
+      flex-wrap: wrap;
+    }
+
+  }

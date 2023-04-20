@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PocketSage</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/5c9d9dc8c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .dropbtn {
+        left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: flex-start;
+
+
+      }
+
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+
+      }
+
+      .dropdown {
+        left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    display: flex;
+                        justify-content: flex-start;
+                    width: 100px;
+              height: 30px;}
+
+
+      .dropdown-content {
+        display: none;
+        justify-content: flex-start;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 10%;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+                        justify-content: flex-start;
+      }
+
+      .dropdown a:hover {background-color: #ddd;}
+
+      .show {display: block;}
+                  header{
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 800;
+                    background-color: black;
+                    padding: 15px;
+                    border-bottom: 10px solid grey;
+                    display: flex;
+                        justify-content: space-between;
+                  }
+                  div {
+                    font-size: 20px;
+                    color: red;
+                    font-weight: 800;
+                    background-color: black;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                  }
+
+                  button {
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+
+                    background: #1976d2;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    display: flex
+
+
+                  }
+
+                  div button:last-child {
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+
+                    background: #ff0000;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                  }
+                  #toprightbuttons{
+                  left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+
+                    background: #ff0000;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    justify-content: flex-end ;
+                    display:flex
+
+
+                    /*TEMP FIX BECAUSE BUTTONS ARE TOO BIG LOL*/
+
+                    width: 100px;
+              height: 30px;}
+
+                  .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            button:hover {
+                      color: rgb(255, 255, 255);}
+
+
+                      #topleftbuttons{
+                        background: #1976d2;
+                        justify-content: flex-start;
+                        display:flex
+
+                      }
+    </style>
+  </head>
+  <header>
+    <div>
+      <img
+        id="placeholder"
+        src="http://cdn.akc.org/content/article-body-image/golden_puppy_dog_pictures.jpg"
+        alt="pocket sage image"
+        width="20%"
+      />
+      <div class="dropdown">
+        <button onclick="myFunction(0)" class="dropbtn">Features</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+
+        function myFunction(index) {
+          console.log(document.querySelectorAll("#myDropdown"));
+          var dropdownlist = document.querySelectorAll("#myDropdown");
+          dropdownlist[index].classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+      </script>
+      <div class="dropdown">
+        <button onclick="myFunction(1)" class="dropbtn">Resources</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home2</a>
+          <a href="#about">About2</a>
+          <a href="#contact">Contact2</a>
+        </div>
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+
+        // Close the dropdown if the user clicks outside of it
+      </script>
+      <div class="dropdown">
+        <button onclick="myFunction(2)" class="dropbtn">Pricing</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home3</a>
+          <a href="#about">About3</a>
+          <a href="#contact">Contact3</a>
+        </div>
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+
+        // Close the dropdown if the user clicks outside of it
+      </script>
+      <div class="dropdown">
+        <button onclick="myFunction(3)" class="dropbtn">Extras</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home4</a>
+          <a href="#about">About4</a>
+          <a href="#contact">Contact4</a>
+        </div>
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+
+        // Close the dropdown if the user clicks outside of it
+      </script>
+    </div>
+    <div>
+      <a>
+        <button id="toprightbuttons">Demo</button>
+      </a>
+      <a>
+        <button id="toprightbuttons">Log in</button>
+      </a>
+    </div>
+  </header>
+  <body>
+    This is text and it is being put in.
+    <div>
+      More text here.
+      <button>This is a button</button>
+      <button
+        style="
+          left: 0%;
+          right: 0%;
+          top: 0%;
+          bottom: 0%;
+
+          background: #ff0000;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+        "
+      >
+        This is ANOTHER button
+      </button>
+      <button>This is ANOTHER ANOTHER button</button>
+    </div>
+  </body>
+</html>
