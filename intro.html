@@ -1,0 +1,44 @@
+
+
+<html>
+    <head>
+        <title>Intro Card</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/intro.css">
+        <link rel="stylesheet" type="text/css" href="css/brand.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="card-container" style="position: relative; margin: 60;">
+            <div class="card" style="position: relative; z-index: 1;">
+                <div class="d-flex align-items-center" style="gap: 30px;">
+                    <div class="card-img">
+                        <img class="" src="./assets/images/guy.png" alt="">
+                    </div>
+                    <div class="card-body flex-grow">
+                        <p class="card-title">Marcus Aurelius</p>
+                        <p>I am a web developer</p>
+                    </div>
+                </div>
+                <!-- <div class="overlay"></div> -->
+            </div>
+            <div class="frosty"></div>
+            
+        </div>        
+        <!-- <div id="animated-bg"></div> -->
+    
+    <script>
+        const sections = 50;
+        const overlay = document.querySelector('.overlay');
+        for (let i = 0; i < sections; i++) {
+            const section = document.createElement('div');
+            section.classList.add('section');
+            section.style.setProperty('--index', i);
+            overlay.appendChild(section);
+        }
+    </script>
+    </body>
+    </html>

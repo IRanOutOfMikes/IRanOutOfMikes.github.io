@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>20 Equal Sections</title>
+    <style>
+      .overlay {
+        position: relative;
+        z-index: 1;
+        width: 500px;
+        height: 200px;
+        background-color: red;
+      }
+      
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .section {
+        background-color: white;
+        width: calc(500px / 20);
+        height: 100%;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        opacity: 1;
+        animation: fadeIn 1s ease-in-out forwards;
+        animation-delay: calc(0.05s * var(--index));
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+      </div>
+    </div>
+
+    <script>
+        const sections = 20;
+        const container = document.querySelector('.container');
+        for (let i = 0; i < sections; i++) {
+            const section = document.createElement('div');
+            section.classList.add('section');
+            section.style.setProperty('--index', i);
+            container.appendChild(section);
+        }
+    </script>
+  </body>
+</html>

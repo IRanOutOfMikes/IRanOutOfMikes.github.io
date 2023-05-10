@@ -57,10 +57,9 @@ i > svg {
     /* width: 100%; */
 }
 #browser-header-row-1 {
-    padding: 20px 18px;
     background-color: #dde1e5;
     /* border-bottom: 1px solid #e1e1e1; */
-    height: 20px;
+    /* height: 20px; */
 }
 
 #browser-header-row-2 {
@@ -70,6 +69,54 @@ i > svg {
     height: 25px;
     border-bottom: 1px solid #c9c9c9;
 
+}
+
+#browser-window-buttons {
+    padding: 16px 18px;
+}
+
+#browser-header-tabs {
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.browser-header-tab {
+    padding: 10px 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.browser-header-tab:not(.active) + .browser-header-tab:not(.active) {
+    position: relative;
+}
+
+.browser-header-tab:not(.active) + .browser-header-tab:not(.active):before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 60%;
+    background-color: #c9c9c9;
+}
+
+.browser-header-tab.active {
+    background-color: #fff;
+}
+
+.browser-header-tab-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+.browser-header-tab i {
+    color: #6f7377;
+    font-size: 0.9rem;
 }
 
 #browser-header-row-2 i {

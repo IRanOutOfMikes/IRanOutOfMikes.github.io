@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PocketSage</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/logo/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/logo/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/logo/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/logo/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/logo/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/logo/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/logo/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/logo/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/logo/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
+  <link rel="manifest" href="./assets/logo/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/logo/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5c9d9dc8c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/brand.css">
+
+  <!-- <link rel="stylesheet" href="./css/fonts.css"> -->
+  <style>
+    .marketing .col-lg-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .pt-6 {
+      padding-top: 4.5rem;
+    }
+
+    .pt-7 {
+      padding-top: 6rem;
+    }
+
+    .marketing .col-lg-4 p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+
+    div[class^="card"] {
+      display: flex;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .justify-space-between {
+      justify-content: space-between;
+    }
+
+    .outline-btn {
+
+      
+    outline: 4px solid var(--secondary-button-color)!important; 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="arrow-right-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
+      </path>
+    </symbol>
+    <symbol id="x-lg" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"></path>
+      <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z">
+      </path>
+    </symbol>
+  </svg>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+  <nav class="navbar navbar-expand-lg fixed-top"
+    style="background-color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+    <div class="container-fluid">
+      <div style="display: flex; align-items: center;">
+        <img id="placeholder" src="./assets/logo/apple-icon-60x60.png" alt="pocket sage image" width="55px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+                border-radius: 50%; margin-right: 2rem; margin-left: 1rem;" />
+        <span style="margin-right: 2rem;">
+          <h2 style="font-weight: bold;">PocketSage</h2>
+        </span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pricing
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </div>
+      <form class="d-flex" role="search">
+        <div class="search-form"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="border: none;"></div>
+
+      </form>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="flex-grow: 0;">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <button style="padding: 5px 12px;" class="btn btn-secondary d-inline-flex align-items-center"
+              type="button">Log in</button>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    </div>
+  </nav>
+
+
+
+  <br><br><br><br><br><br>
+  <div Style="text-align: center;">
+    <h1 class="text-body-emphasis" style="font-size: 400%; font-weight: bolder; ">Choose the plan that's right for you
+    </h1>
+
+
+
+
+    <p class="fs-5 text-muted" style="padding-bottom: 5rem;"> Join over 375,000 websites worldwide that trust PocketSage
+      to help them make better optimization decisions. </p>
+    <button id="monthly" class="btn btn-primary d-inline-flex align-items-center" type="button"
+      style="background-color: var(--primary-button-color);" onclick="myFunction2()">
+      Monthly
+
+      <script>
+        function myFunction2() {
+          document.querySelectorAll(".monthstrike").forEach(function (pel) {pel.classList.add("d-none"); })
+          document.querySelectorAll(".monthprice").forEach(function (pel) {pel.classList.remove("d-none"); })
+          document.querySelectorAll(".yearprice").forEach(function (pel) {pel.classList.add("d-none"); })
+          document.querySelector("#monthly").classList.add("outline-btn"); 
+          document.querySelector("#yearly").classList.remove("outline-btn"); 
+
+        }
+
+        
+      </script>
+
+    </button>
+    <button id="yearly" class="btn btn-outline-secondary d-inline-flex align-items-center" type="button" onclick="myFunction3()">
+      Yearly
+
+      <script>
+        function myFunction3() {
+          document.querySelectorAll(".monthstrike").forEach(function (pel) {pel.classList.remove("d-none"); })
+          document.querySelectorAll(".monthprice").forEach(function (pel) {pel.classList.add("d-none"); })
+          document.querySelectorAll(".yearprice").forEach(function (pel) {pel.classList.remove("d-none"); })
+          document.querySelector("#monthly").classList.remove("outline-btn"); 
+          document.querySelector("#yearly").classList.add("outline-btn");
+        }
+      </script>
+    </button>
+
+
+
+  </div>
+  <div class="d-flex justify-content-center" style="padding-top: 2rem; gap: 2rem;">
+
+    <div class="card flex-column d-flex" style="border: 1px solid black; width: 400px;  padding: 20px;">
+      <div class="card-header justify-space-between">
+        <div>
+          <h2>Free</h2>
+          <p>Who doesn't like free? <br> Aren't you a commie? </p>
+        </div>
+        <div class="card-header-asset">
+          <img id="placeholder" src="./assets/svg/Archive/Bricklayer-pana.svg" alt="pocket sage image" width="100px"
+          height="100px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      border-radius: 50%;" />
+        </div>
+      </div>
+
+      <div class="card-body flex-column justify-space-between">
+        <div>
+          <p class="monthstrike" style="text-decoration: line-through; margin: 0;">It's already free lol</p>
+
+          <h3>$0 USD/mo</h3>
+          <br>
+          Access to the most recent 90 days of history
+          <br><br>
+          Access to the most recent 90 days of history
+
+        </div>
+        <div class="card-body-cta" style="justify-content: space-between;">
+
+          <button style="padding: 5px 12px; width: 100%; text-align: center;" class="btn btn-secondary"
+            type="button">Get Started</button>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card flex-column d-flex" style="border: 1px solid black; width: 400px;  padding: 20px;">
+      <div class="card-header justify-space-between">
+        <div>
+          <h2>Small</h2>
+          <p>Little price, big help! <br> For your convenience. </p>
+        </div>
+        <div class="card-header-asset">
+          <img id="placeholder" src="./assets/svg/Archive/Tiny house-pana.svg" alt="pocket sage image" width="100px"
+            height="100px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 50%;" />
+        </div>
+      </div>
+
+      <div class="card-body flex-column justify-space-between">
+        <div>
+          <p class="monthstrike" style="text-decoration: line-through; margin: 0;">$15.99</p>
+          <h3 class="monthprice d-none">$15.99 USD/mo</h3>
+          <h3 class="yearprice">$9.99 USD/mo</h3>
+
+          <br>
+          Access to the most recent 150 days of history
+          <br><br>
+          Access to the most recent 150 days of history
+
+        </div>
+        <div class="card-body-cta" style="justify-content: space-between;">
+          <button style="padding: 5px 12px; width: 100%; text-align: center;" class="btn btn-secondary"
+            type="button">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card flex-column d-flex" style="border: 1px solid black; width: 400px;  padding: 20px;">
+      <div class="card-header justify-space-between">
+        <div>
+          <h2>Medium</h2>
+          <p> NOW we're talking! <br> It's pretty good! </p>
+        </div>
+        <div class="card-header-asset">
+          <img id="placeholder" src="./assets/svg/Archive/Beach house-pana.svg" alt="pocket sage image" width="100px"
+            height="100px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 50%;" />
+        </div>
+      </div>
+
+      <div class="card-body flex-column justify-space-between">
+        <div>
+          <p class="monthstrike" style="text-decoration: line-through; margin: 0;">$35.99</p>
+
+          <h3 class="monthprice d-none" >$35.99 USD/mo</h3>
+          <h3 class="yearprice">$24.99 USD/mo</h3>
+
+          <br>
+          Access to the most recent 200 days of history
+          <br><br>
+          Access to the most recent 200 days of history
+
+        </div>
+        <div class="card-body-cta" style="justify-content: space-between;">
+          <button style="padding: 5px 12px; width: 100%; text-align: center;" class="btn btn-secondary"
+            type="button">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card flex-column d-flex" style="border: 1px solid black; width: 400px;  padding: 20px;">
+      <div class="card-header justify-content-between">
+        <div>
+          <h2>Enterprise</h2>
+          <p>Woah, that's huge! <br> You're going places. </p>
+        </div>
+        <div class="card-header-asset">
+          <img id="placeholder" src="./assets/svg/Archive/Tree house-pana.svg" alt="pocket sage image" width="100px"
+            height="100px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 50%;" />
+        </div>
+      </div>
+
+      <div class="card-body flex-column justify-space-between">
+        <div>
+          <p class="monthstrike" style="text-decoration: line-through; margin: 0;">$150.99</p>
+
+          <h3 class="monthprice d-none">$150.99 USD/mo</h3>
+          <h3 class="yearprice">$99.99 USD/mo</h3>
+
+          <br>
+          Access to the most recent 365 days of history
+          <br><br>
+          Access to the most recent 365 days of history
+
+        </div>
+        <div class="card-body-cta" style="justify-content: space-between;">
+          <button style="padding: 5px 12px; width: 100%; text-align: center;" class="btn btn-secondary"
+            type="button">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-4 my-md-5 pt-md-5 border-top"></div>
+
+
+  <div Style="text-align: center;">
+    <h2 class="text-body-emphasis" style="font-size: 400%; font-weight: bolder; ">Every plan. Every feature.
+    </h2>
+    <p class="fs-5 text-muted" style="padding-bottom: 5rem;"> Ayo! No madda what plan ya choose, <br>Ya get the same
+      things, capisce? </p>
+
+    <div class="container d-flex" style="padding-top: 2rem; justify-content: space-between;">
+
+
+
+
+      <div class="card flex-column d-flex" style="border: 1px solid black; width: 40%; height: 40%; padding: 20px;">
+        <div>
+          <img id="placeholder" src="./assets/svg/Archive/User flow-pana.svg" alt="pocket sage image" width="200px"
+            height="200px">
+        </div>
+
+        <div class="card-body flex-column justify-space-between">
+          <div>
+            <h3>Session Recording</h3>
+
+            According to all known laws
+            of aviation,
+            there is no way a bee
+            should be able to fly.
+            Its wings are too small to get
+            its fat little body off the ground.
+            The bee, of course, flies anyway
+
+
+          </div>
+          <div class="card-body-cta" style="justify-content: space-between;">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card flex-column d-flex" style="border: 1px solid black; width: 40%; height: 40%; padding: 20px;">
+
+        <div>
+          <img id="placeholder" src="./assets/svg/Archive/Bug fixing-pana.svg" alt="pocket sage image" width="200px"
+            height="200px">
+        </div>
+
+        <div class="card-body flex-column justify-space-between">
+          <div>
+            <h3>Front-end error reporting</h3>
+            because bees don't care
+            what humans think is impossible.
+            Yellow, black. Yellow, black.
+            Yellow, black. Yellow, black.
+            Ooh, black and yellow!
+            Let's shake it up a little.
+            Barry! Breakfast is ready!
+
+          </div>
+          <div class="card-body-cta" style="justify-content: space-between;">
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+      <div Style="text-align: center;">
+        <h2 class="text-body-emphasis" style="font-size: 400%; font-weight: bolder; ">Frequently Asked Questions
+        </h2>
+
+        <div class="container d-flex" style="padding-top: 2rem; justify-content: space-between; align-items: stretch;">
+
+
+
+
+          <div class="card flex-column d-flex" style="border: 1px solid black; width: 45%; padding: 20px;">
+
+
+            <div class="card-body flex-column justify-space-between">
+              <div>
+                <h3>Is water wet or does it make things wet?</h3>
+
+                Water itself is not wet since wetness is defined as a sensation that results from being covered or
+                saturated with a liquid.
+                However, water can make things wet by coming into contact with them and causing them to become covered
+                or saturated with the liquid.
+                So, from the perspective of an object that is in contact with water, it would be accurate to say that
+                water makes it wet.
+                Ultimately, the answer to this question depends on how one chooses to define and interpret the concept
+                of wetness.
+
+
+
+              </div>
+              <div class="card-body-cta" style="justify-content: space-between;">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card flex-column d-flex" style="border: 1px solid black; width: 45%; padding: 20px;">
+
+
+
+            <div class="card-body flex-column justify-space-between">
+              <div>
+                <h3>Why doesn't my crush love me back?</h3>
+
+                Maybe they're just really bad at recognizing amazingness when it's right in front of them. Don't worry,
+                it's not your fault that they're visually challenged!
+
+                Have you considered that your crush might be a robot? They could be programmed to only like people with
+                a specific set of qualities that you don't possess, like being able to transform into a car or
+                something. It's not personal, it's just programming!
+
+                I hate to break it to you, but your crush might have mistaken you for a cactus. It happens more often
+                than you'd think. Don't worry, though - there's someone out there who will appreciate your prickly
+                charm.
+
+                It's possible that your crush is actually a superhero who's sworn off relationships in order to focus on
+                saving the world. You wouldn't want to get in the way of that, would you? Just think of yourself as a
+                sidekick for now, and maybe you'll eventually earn their trust and affection.
+
+
+              </div>
+              <div class="card-body-cta" style="justify-content: space-between;">
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="container d-flex" style="padding-top: 2rem; justify-content: space-between; align-items: stretch;">
+
+
+
+
+          <div class="card flex-column d-flex" style="border: 1px solid black; width: 45%; padding: 20px;">
+
+
+            <div class="card-body flex-column justify-space-between">
+              <div>
+                <h3>How can I learn to hit a sick flip reset?</h3>
+
+                First, you'll need to score a double tap off the backboard and get all four wheels on the ball as it
+                rebounds.
+                Once all four wheels are touching the ball, jump and flip your car upside down while releasing your
+                boost.
+                As you approach the ball again, you'll need to hit jump to reset your flip, allowing you to flip into
+                another aerial maneuver.
+                Timing is crucial, so make sure to practice the move in free play or training mode until you can execute
+                it consistently.
+
+
+
+              </div>
+              <div class="card-body-cta" style="justify-content: space-between;">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card flex-column d-flex" style="border: 1px solid black; width: 45%; padding: 20px;">
+
+
+
+            <div class="card-body flex-column justify-space-between">
+              <div>
+                <h3>How does one "hit the dab"?</h3>
+
+                Start by raising one arm up to your face and tucking your head into the crook of your elbow.
+                At the same time, extend your other arm out behind you.
+                Hold the pose for a few seconds before relaxing and returning to a standing position.
+                Repeat the movement with the opposite arm and continue alternating arms as desired.
+
+                Now you know how to dab with the swagger everyone will love!
+
+              </div>
+              <div class="card-body-cta" style="justify-content: space-between;">
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="pt-4 my-md-5 pt-md-5 border-top"></div>
+
+        <div class="row">
+          <div class="col-12 col-md">
+            <img id="placeholder" src="./assets/logo/apple-icon-60x60.png" alt="pocket sage image" width="55px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+              border-radius: 50%; margin-right: 2rem; margin-left: 1rem;" />
+            <small class="d-block mb-3 text-body-secondary">© 2023–2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <hr class="featurette-divider">
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+
+          <a href="#"><i class="fa fa-twitter"> </i></a>
+          <a href="#"><i class="fa fa-facebook"> </i></a>
+          <a href="#"><i class="fa fa-instagram"> </i></a>
+
+
+        </p>
+        <p class="mb-0" style="gap: 2rem; display: flex; width: 50%;"><a href="/">status</a><a href="/">privacy</a><a
+            href="/">privacy</a><a href="/">privacy</a><a href="/">privacy</a><a href="/">privacy</a></p>
+        <p class="mb-1">© PocketSage</p>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("onetrust-banner-sdk");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <div id="onetrust-banner-sdk" class="otFlat">
+      <div style="display: flex; align-items: center; max-width: 60%; margin: 0 auto; padding: 1rem;">
+        <a style="position: absolute; right: 1%; font-size: 1.5rem;" onclick="myFunction()"> <i
+            class="fas fa-times"></i></a>
+        <p>This website uses cookies to enhance user experience and to analyze
+          performance and traffic on our website. We also share information about your use of our site with our
+          social media, advertising and analytics partners. <a href=".">More
+            Info</a></p>
+        <div style="">
+          <div class="mobile-row" style="display: flex; gap: 1rem; "><button style="padding: 5px 12px; flex-shrink: 0;"
+              class="btn btn-primary d-inline-flex align-items-center" type="button">Cookies
+              Settings</button>
+            <button style="padding: 5px 12px;  flex-shrink: 0;"
+              class="btn btn-secondary d-inline-flex align-items-center" type="button" onclick="myFunction()">Accept All
+              Cookies</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>

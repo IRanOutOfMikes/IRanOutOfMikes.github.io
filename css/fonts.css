@@ -1,0 +1,56 @@
+
+
+/* 100 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-thin.otf");
+    font-weight: 100;
+}
+/* 200 */
+/* @font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-extralight.otf");
+    font-weight: 200;
+} */
+/* 300 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-light.otf");
+    font-weight: 300;
+}
+/* 400 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-regular.otf");
+    font-weight: 400;
+}
+/* 500 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-medium.otf");
+    font-weight: 500;
+}
+/* 600 */
+/* @font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-semibold.otf");
+    font-weight: 600;
+} */
+/* 700 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-bold.otf");
+    font-weight: 700;
+}
+/* 800 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-extrabold.otf");
+    font-weight: 800;
+}
+/* 900 */
+@font-face {
+    font-family: "CeraRoundPro";
+    src: url("fonts/CeraRoundPro/Fontspring-DEMO-ceraroundpro-black.otf");
+    font-weight: 900;
+}

@@ -49,6 +49,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/5c9d9dc8c2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/brand.css">
+  <link rel="stylesheet" href="./css/fonts.css">
 </head>
 
 <body>
@@ -70,14 +71,13 @@
     crossorigin="anonymous"></script>
 
 
-  <nav class="navbar navbar-expand-lg fixed-top"
-    style="background-color: white; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+  <nav id="header" class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
     <div class="container-fluid">
       <div style="display: flex; align-items: center;">
-        <img id="placeholder" src="./assets/logo/apple-icon-60x60.png" alt="pocket sage image" width="55px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-                border-radius: 50%; margin-right: 2rem; margin-left: 1rem;" />
-        <span style="margin-right: 2rem;">
-          <h2 style="font-weight: bold;">PocketSage</h2>
+        <img id="placeholder" src="./assets/logo/apple-icon-60x60.png" alt="pocket sage image" width="45px" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+                border-radius: 50%; margin-right: 1rem; margin-left: 1rem;" />
+        <span style="margin-right: 3rem;">
+          <h3 style="font-weight: bold;" class="mb-0">PocketSage</h3>
         </span>
       </div>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -135,16 +135,14 @@
     </div>
   </nav>
   <div style="display:flex" class="pt-7">
-    <div class="p-5 text-left bg-body-tertiary rounded-3" style="width: 50%;">
-      <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <h1 class="text-body-emphasis" style="font-size: 400%; font-weight: bolder;">Why are you here, if not love?
+    <div class="p-5 text-left bg-body-tertiary rounded-3 d-flex flex-column justify-content-around mt-4"
+      style="width: 50%; margin-left: 30px;    box-shadow: rgb(6 24 44) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;">
+      <h1 class="text-body-emphasis mt-3" style="font-size: 400%; font-weight: bolder;">Why are you here, if not love?
       </h1>
       <p class="col-lg-8  fs-5 text-muted">
         With all your people, tools and communication in one place, you can work faster and more flexibly than
         ever before. </p>
-      <div class="d-inline-flex gap-2 mb-5">
+      <div class="d-inline-flex gap-2">
         <button class="btn btn-primary d-inline-flex align-items-center" type="button"
           style="background-color: var(--primary-button-color);">
           Sign up
@@ -170,8 +168,7 @@
     <!-- Three columns of text below the carousel -->
     <div class="row pt-7">
       <div class="col-lg-4">
-        <img width="150" height="150" src="./assets/svg/Archive/Cell phone-pana.svg"
->
+        <img width="150" height="150" src="./assets/svg/Archive/Cell phone-pana.svg">
         <h2 class="fw-normal">Reason number one</h2>
         <p>Talk about why we are the best and the rest is doodoo! Talk about why we are the best and the rest is doodoo!
         </p>
@@ -206,8 +203,7 @@
         </p>
       </div>
       <div class="col-md-5">
-        <img width="500"
-          height="500" src="./assets/svg/Archive/Press pause-pana.svg">
+        <img width="500" height="500" src="./assets/svg/Archive/Press pause-pana.svg">
       </div>
     </div>
 
@@ -219,8 +215,7 @@
           layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img width="500"
-          height="500" src="./assets/svg/Archive/Prototyping process-pana.svg">
+        <img width="500" height="500" src="./assets/svg/Archive/Prototyping process-pana.svg">
       </div>
     </div>
 
@@ -233,8 +228,7 @@
           actual content. Your content.</p>
       </div>
       <div class="col-md-5">
-        <img width="500"
-          height="500" src="./assets/svg/Archive/User flow-pana.svg">
+        <img width="500" height="500" src="./assets/svg/Archive/User flow-pana.svg">
       </div>
     </div>
 
@@ -320,30 +314,41 @@
       </div>
     </footer>
 
-    <script> 
-    function myFunction() {
-      var x = document.getElementById("onetrust-banner-sdk");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("onetrust-banner-sdk");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
       }
-    }
-</script>
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 30) {
+          document.getElementById("header").classList.add("navbar-stuck");
+        } else {
+          document.getElementById("header").classList.remove("navbar-stuck");
+        }
+      }
+
+      window.onscroll = scrollFunction;
+    </script>
 
     <div id="onetrust-banner-sdk" class="otFlat">
       <div style="display: flex; align-items: center; max-width: 60%; margin: 0 auto; padding: 1rem;">
-        <a style="position: absolute; right: 1%; font-size: 1.5rem;" onclick="myFunction()"> <i class="fas fa-times"></i></a>
+        <a style="position: absolute; right: 1%; font-size: 1.5rem;" onclick="myFunction()"> <i
+            class="fas fa-times"></i></a>
         <p>This website uses cookies to enhance user experience and to analyze
           performance and traffic on our website. We also share information about your use of our site with our
           social media, advertising and analytics partners. <a href=".">More
             Info</a></p>
         <div style="">
-          <div class="mobile-row" style="display: flex; gap: 1rem; "><button style="padding: 5px 12px; flex-shrink: 0;" class="btn btn-primary d-inline-flex align-items-center"
-              type="button">Cookies
+          <div class="mobile-row" style="display: flex; gap: 1rem; "><button style="padding: 5px 12px; flex-shrink: 0;"
+              class="btn btn-primary d-inline-flex align-items-center" type="button">Cookies
               Settings</button>
-            <button style="padding: 5px 12px;  flex-shrink: 0;" class="btn btn-secondary d-inline-flex align-items-center"
-              type="button"  onclick="myFunction()" >Accept All Cookies</button>
+            <button style="padding: 5px 12px;  flex-shrink: 0;"
+              class="btn btn-secondary d-inline-flex align-items-center" type="button" onclick="myFunction()">Accept All
+              Cookies</button>
           </div>
         </div>
       </div>

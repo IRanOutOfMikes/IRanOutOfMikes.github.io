@@ -15,7 +15,9 @@ Slightly Darker Green: #558575  */
 html,
 body {
   color: var(--main-font-color);
+  font-family: CeraRoundPro;
 }
+
 button {
   color: var(--primary-button-color);
 }
@@ -29,6 +31,7 @@ button {
   border-radius: 12px;
   background-color: var(--primary-button-color);
 }
+
 .btn-secondary {
   color: var(--main-font-color);
   font-weight: bold;
@@ -38,6 +41,7 @@ button {
   border-radius: 12px;
   background-color: var(--secondary-button-color);
 }
+
 .btn-outline-secondary {
   color: var(--main-font-color);
   font-weight: bold;
@@ -47,46 +51,69 @@ button {
   border-radius: 12px;
   background-color: var(--main-bg-color);
 }
-.btn-primary:active, .btn-secondary:active, .btn-outline-secondary:active{
-    box-shadow: none;
-    margin: 0;
-    top: 0.2em;
+
+.btn-primary:active,
+.btn-secondary:active,
+.btn-outline-secondary:active {
+  box-shadow: none;
+  margin: 0;
+  top: 0.2em;
 }
-.btn-primary, .btn-secondary, .btn-outline-secondary{
-    position: relative; top: 0em;
-    transition: none;
+
+.btn-primary,
+.btn-secondary,
+.btn-outline-secondary {
+  position: relative;
+  top: 0em;
+  transition: none;
 }
-.bg-body-tertiary{
-background-color: var(--secondary-button-color)!important; color: var(--secondary-button-color); 
+
+.bg-body-tertiary {
+  background-color: var(--secondary-button-color) !important;
+  color: var(--secondary-button-color);
 
 }
-.search-form{
-    padding: 8px; border-radius: 32px; border: 1px solid var(--main-font-color); box-shadow: inset 0 0.25em 0 0 #f0f1f3;
+
+.search-form {
+  padding: 8px;
+  border-radius: 32px;
+  border: 1px solid var(--main-font-color);
+  box-shadow: inset 0 0.25em 0 0 #f0f1f3;
 
 }
+
 .dropdown-toggle {
-    font-weight: 600; 
-    color: var(--main-font-color)  
+  font-weight: 600;
+  color: var(--main-font-color)
 }
 
 #onetrust-banner-sdk.otFlat {
-position: fixed;
-    z-index: 2147483645;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #fff;
-    max-height: 90%;
-    overflow-x: hidden;
-    overflow-y: auto; }
+  position: fixed;
+  z-index: 2147483645;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  max-height: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-    #onetrust-banner-sdk {
-      box-shadow: 0 0 18px rgba(0,0,0,.2);
+#onetrust-banner-sdk {
+  box-shadow: 0 0 18px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 600px) {
+  .mobile-row {
+    flex-wrap: wrap;
   }
 
-  @media (max-width: 600px){
-    .mobile-row {
-      flex-wrap: wrap;
-    }
+}
 
-  }
+#header {
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar-stuck {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
